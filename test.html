@@ -9,7 +9,6 @@
 
 <body>
     <a-scene>
-        <a-sphere position="1 1.25 0" radius="0.5" color="#EF2D5E"></a-sphere>
         <a-cylinder position="1 0.75 0" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
         <a-entity scale="1 1 1" position="-22 0 15" id="entityEl">
         </a-entity>
@@ -17,7 +16,7 @@
     <script>
         let entityEl = document.querySelector('#entityEl')
         const ifcLoader = new IFCLoader.IFCLoader();
-        ifcLoader.load("FM_LFT_DigitalHub.ifc", (ifcModel) => {
+        ifcLoader.load("FM_HZG_DigitalHub.ifc", (ifcModel) => {
             console.log(ifcModel);
             entityEl.setObject3D('mesh', ifcModel);
         });
