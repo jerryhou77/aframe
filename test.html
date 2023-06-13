@@ -9,17 +9,20 @@
 
 <body>
     <a-scene>
-        <a-entity scale="1 1 1" position="-22 1 0" id="entityEl">
-        </a-entity>
+        <a-sphere position="1 1.25 0" radius="0.5" color="#EF2D5E"></a-sphere>
+        <a-cylinder position="1 0.75 0" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+        <!-- <a-entity scale="1 1 1" position="-22 1 0" id="entityEl">
+        </a-entity> -->
     </a-scene>
-    <script>
+    <!-- <script>
         let entityEl = document.querySelector('#entityEl')
         const ifcLoader = new IFCLoader.IFCLoader();
         ifcLoader.load("FM_LFT_DigitalHub.ifc", (ifcModel) => {
             console.log(ifcModel);
             entityEl.setObject3D('mesh', ifcModel);
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
