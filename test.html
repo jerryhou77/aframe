@@ -16,7 +16,7 @@
     <script>
         let entityEl = document.querySelector('#entityEl')
         const ifcLoader = new IFCLoader.IFCLoader();
-        ifcLoader.load("FM_HZG_DigitalHub.ifc", (ifcModel) => {
+        ifcLoader.load("FM_SAN_DigitalHub.ifc", (ifcModel) => {
             console.log(ifcModel);
             entityEl.setObject3D('mesh', ifcModel);
         });
